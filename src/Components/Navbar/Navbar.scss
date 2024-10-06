@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 20px;
+
+  .notify-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .avatar {
+    width: 30px;
+
+    img {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  .search-input-container {
+
+    input,
+    input:focus {
+      padding: 10px;
+      outline: none;
+      border: 2px solid #a9a9a9;
+      border-radius: 10px;
+    }
+  }
+}
