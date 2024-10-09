@@ -9,7 +9,7 @@ import {
   CreditCard,
 } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
-import "./aside.scss";
+import "./Aside.scss";
 function Aside() {
   const AsideData = [
     {
@@ -65,8 +65,8 @@ function Aside() {
             <ul>
               {AsideData.map((item, key) => {
                 return (
-                  <li>
-                    <NavLink key={key} to={item.to}>
+                  <li key={key}>
+                    <NavLink to={item.to}>
                       <i>{item.icon}</i>
                       <div>{item.title}</div>
                     </NavLink>

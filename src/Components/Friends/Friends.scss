@@ -1,0 +1,23 @@
+.firends-box-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+  .firends-box {
+    padding: 20px;
+    background-color: #fff;
+
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 10px;
+
+      i {
+        padding: 5px;
+        border-radius: 50%;
+        background-color: #EEE;
+      }
+    }
+  }
+}

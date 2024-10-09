@@ -55,31 +55,31 @@ function Settings() {
             <h3>Security Info</h3>
             <small>Security Information About Your Account</small>
             <div className="password-config">
-              <div classname="password">
-                <div classname="password-info">
+              <div className="password">
+                <div className="password-info">
                   <p>password</p>
                   <small>last change on 25/10/2021</small>
                 </div>
-                <div classname="password-control">
-                  <button classname="password-change">Change</button>
+                <div className="password-control">
+                  <button className="password-change">Change</button>
                 </div>
               </div>
-              <div classname="two-factor">
-                <div classname="password-info">
+              <div className="two-factor">
+                <div className="password-info">
                   <p> Two-Factor Authentication </p>
                   <small>Enable/Disable The Feature</small>
                 </div>
-                <div classname="password-control">
+                <div className="password-control">
                   <input type="checkbox" name="" id="" />
                 </div>
               </div>
-              <div classname="devices">
-                <div classname="password-info">
+              <div className="devices">
+                <div className="password-info">
                   <p>Devices</p>
                   <small>Check The Login Devices List</small>
                 </div>
-                <div classname="password-control">
-                  <button classname="password-change">Devices</button>
+                <div className="password-control">
+                  <button className="password-change">Devices</button>
                 </div>
               </div>
             </div>

@@ -1,3 +1,4 @@
+import { UserContextProvider } from "./UserContext/UserContext";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Layout from "./Components/Layout/Layout";
@@ -9,6 +10,7 @@ import Courses from "./Components/Courses/Courses";
 import Friends from "./Components/Friends/Friends";
 import Files from "./Components/Files/Files";
 import Plans from "./Components/Plans/Plans";
+import { useContext } from "react";
 
 const client = new QueryClient();
 const router = createBrowserRouter([
@@ -58,9 +60,11 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <QueryClientProvider client={client}>
-      <RouterProvider router={router} />
-    </QueryClientProvider>
+    <UserContextProvider>
+      <QueryClientProvider client={client}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>
+    </UserContextProvider>
   );
 }
 
