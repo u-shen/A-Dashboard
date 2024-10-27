@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Logo from "../Navbar/avatar.png";
 import "./Projects.scss";
 
 function Projects() {
@@ -58,9 +57,9 @@ function Projects() {
               </div>
               <div className="description-project">{project.desc}</div>
               <div className="img-project">
-                <img src={Logo} />
-                <img src={Logo} />
-                <img src={Logo} />
+                <img src="https://avatar.iran.liara.run/public/boy" />
+                <img src="https://avatar.iran.liara.run/public/girl" />
+                <img src="https://avatar.iran.liara.run/public/boy?usearname=[ushen]" />
               </div>
               <div className="line"></div>
               <ul className="skills">
@@ -86,4 +85,3 @@ function Projects() {
 }
 
 export default Projects;
-
