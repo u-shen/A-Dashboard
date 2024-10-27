@@ -10,7 +10,7 @@ import Courses from "./Components/Courses/Courses";
 import Friends from "./Components/Friends/Friends";
 import Files from "./Components/Files/Files";
 import Plans from "./Components/Plans/Plans";
-import { useContext } from "react";
+import NotFound from "./Components/notFound/NotFound";
 
 const client = new QueryClient();
 const router = createBrowserRouter([
@@ -53,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "Plans",
         element: <Plans />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },

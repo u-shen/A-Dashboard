@@ -7,6 +7,9 @@ import {
   PeopleOutline,
   InsertDriveFile,
   CreditCard,
+  LinkedIn,
+  Facebook,
+  GitHub,
 } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
 import "./Aside.scss";
@@ -56,11 +59,11 @@ function Aside() {
   return (
     <>
       <div className="aside-container">
-        <div className="aside-title">
-          <h4>ushen</h4>
-          <span></span>
-        </div>
         <div className="aside-links">
+          <div className="aside-title">
+            <h4>ushen</h4>
+            <span></span>
+          </div>
           <nav>
             <ul>
               {AsideData.map((item, key) => {
@@ -73,6 +76,29 @@ function Aside() {
                   </li>
                 );
               })}
+              <div className="social">
+                <a
+                  className="facebook"
+                  href="https://www.facebook.com/Mohamedpr97"
+                >
+                  <i>
+                    <Facebook />
+                  </i>
+                </a>
+                <a className="github" href="https://github.com/mohamedpr97">
+                  <i>
+                    <GitHub />
+                  </i>
+                </a>
+                <a
+                  className="linkedin"
+                  href="https://www.linkedin.com/in/mohamed-samy-24b8b51b9/"
+                >
+                  <i>
+                    <LinkedIn />
+                  </i>
+                </a>
+              </div>
             </ul>
           </nav>
         </div>

@@ -1,0 +1,90 @@
+.Plans-Container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .plan {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+
+    .title {
+      font-weight: bold;
+    }
+
+    .plan-meta-data {
+      width: 100%;
+      padding: 30px;
+      text-align: center;
+      outline-offset: 5px;
+      color: #fff;
+    }
+
+    .green {
+      background-color: #22c55e;
+      outline: 5px solid #22c55e;
+    }
+
+    .blue {
+      background-color: #0075ff;
+      outline: 5px solid #0075ff;
+    }
+
+    .orange {
+      background-color: #f59e0b;
+      outline: 5px solid #f59e0b;
+    }
+  }
+
+  .plan-features {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .line {
+      display: block;
+      height: 2px;
+      background-color: rgba($color: #888, $alpha: .2);
+      width: 100%;
+    }
+
+    .green-btn {
+      background-color: #22c55e;
+    }
+
+    .blue-btn {
+      background-color: #0075ff;
+    }
+
+    .orange-btn {
+      background-color: #f59e0b;
+    }
+
+    .btn {
+      text-align: right;
+    }
+
+    .plan-btn {
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .current {
+      color: #888;
+      text-align: center;
+    }
+  }
+
+  .plan-feature {
+    display: flex;
+    gap: 25px
+  }
+}
