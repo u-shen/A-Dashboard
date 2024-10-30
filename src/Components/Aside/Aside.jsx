@@ -77,22 +77,19 @@ function Aside() {
                 );
               })}
               <div className="social">
-                <a
-                  className="facebook"
-                  href="https://www.facebook.com/Mohamedpr97"
-                >
+                <a className="facebook" href="https://www.facebook.com/u-shen">
                   <i>
                     <Facebook />
                   </i>
                 </a>
-                <a className="github" href="https://github.com/mohamedpr97">
+                <a className="github" href="https://github.com/u-shen">
                   <i>
                     <GitHub />
                   </i>
                 </a>
                 <a
                   className="linkedin"
-                  href="https://www.linkedin.com/in/mohamed-samy-24b8b51b9/"
+                  href="https://www.linkedin.com/in/u-shen/"
                 >
                   <i>
                     <LinkedIn />
