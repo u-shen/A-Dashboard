@@ -6,8 +6,9 @@
 
   .plan {
     flex: 1;
-    min-width: 300px;
+    flex-basis: 300px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 40px;
     padding: 20px;

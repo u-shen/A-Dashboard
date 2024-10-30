@@ -1,0 +1,174 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .user {
+    @extend .profile;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+
+    .user-profile {
+      @extend .profile;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .image img {
+        width: 80px;
+      }
+    }
+
+    .user-meta-data {
+      @extend .profile;
+      flex-grow: 1;
+      flex-wrap: wrap;
+
+      .general-info:not(:last-child) {
+        border-bottom: 2px solid rgba(88, 88, 88, .2);
+      }
+
+      .general-info {
+        padding: 10px;
+        color: #888;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        flex-grow: 1;
+
+        .answer {
+          color: #000;
+        }
+
+        .data {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          div {
+            display: flex;
+            gap: 5px;
+
+          }
+
+          @media (max-width:767px) {
+            flex-direction: column;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .profile-meta-data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .skills {
+      @extend .profile;
+      border-radius: 8px;
+      padding: 20px;
+      background-color: #fff;
+      flex-grow: 1;
+
+      .skills-title {
+        small {
+          color: #888
+        }
+
+      }
+
+      .skills-list {
+        @extend .profile;
+        gap: 40px;
+
+        .skill-name {
+          display: flex;
+          gap: 10px;
+
+          @media(max-width:767px) {
+            flex-direction: column;
+          }
+        }
+
+        .skill-name:not(:last-child) {
+          display: flex;
+          border-bottom: 2px solid rgba(88, 88, 88, .2);
+          padding: 10px 0;
+        }
+
+        li {
+          font-size: 14px;
+          text-transform: uppercase;
+          margin-right: 10px;
+          border-radius: 8px;
+          padding: 5px 10px;
+          background-color: rgba(88, 88, 88, .2);
+          ;
+        }
+      }
+    }
+
+    .latset-active {
+      @extend .profile;
+      justify-content: center;
+      flex-grow: 5;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #fff;
+
+      .activity-title {
+        h4 {
+          font-weight: bold;
+        }
+
+        small {
+          color: #888;
+        }
+      }
+
+      .active {
+        display: flex;
+        align-items: centre;
+        gap: 20px;
+        padding: 10px 0;
+
+        .active-img img {
+          width: 50px
+        }
+
+        .desc {
+          font-size: smaller;
+          color: #888;
+        }
+
+        .active-title {
+          padding-top: 5px;
+        }
+
+        .active-date {
+          margin-left: auto;
+
+          .date {
+            font-size: small;
+            color: #888;
+          }
+        }
+      }
+
+    }
+  }
+
+}

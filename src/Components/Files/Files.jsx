@@ -17,7 +17,7 @@ function Files() {
       title: "my-file.pdf",
       img: pdf,
       date: "20/06/2024",
-      uploader: "Elzero",
+      uploader: "USHEN",
       size: 5.5,
     },
     {
@@ -59,14 +59,14 @@ function Files() {
       title: "my-file.txt",
       img: txt,
       date: "20/01/2022",
-      uploader: "Elzero",
+      uploader: "Farah",
       size: 10.2,
     },
     {
       title: "my-file.zip",
       img: zip,
       date: "05/06/2024",
-      uploader: "Elzero",
+      uploader: "Ippo",
       size: 7.2,
     },
   ];
@@ -91,7 +91,7 @@ function Files() {
     <div className="whole-files-container">
       <div className="files-container">
         <div className="title-container">
-          <h4>Files</h4>
+          <h4></h4>
           <span></span>
         </div>
         <div className="files-uploader">
