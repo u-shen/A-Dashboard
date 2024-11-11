@@ -6,17 +6,20 @@ function Plans() {
   return (
     <>
       <div className="Plans-Container">
-        {aviablePlans.map((plan) => {
+        {aviablePlans.map((plan, index) => {
           return (
-            <div className="plan">
+            <div key={index} className="plan">
               <div className={`${plan.color} plan-meta-data`}>
                 <div className="title">{plan.name}</div>
-                <div className="price">{`$${plan.price}`}</div>
+                <div className="price">
+                  <span className="dolars">$</span>
+                  <span className="number">{`${plan.price}`}</span>
+                </div>
               </div>
               <div className="plan-features">
-                {plan.features.map((feature) => {
+                {plan.features.map((feature, index) => {
                   return (
-                    <>
+                    <div key={index}>
                       <div className="plan-feature">
                         <label className="label-icons">
                           {feature.checked ? (
@@ -28,7 +31,7 @@ function Plans() {
                         <p className="desc">{feature.descrition}</p>
                       </div>
                       <span className="line"></span>
-                    </>
+                    </div>
                   );
                 })}
 

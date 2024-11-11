@@ -206,8 +206,8 @@ function Settings() {
               </label>
             </div>
             <div className="location-failed">
-              <input name="location" id="lli" type="radio" />
-              <label htmlFor="lli">
+              <input name="location" id="ulli" type="radio" />
+              <label htmlFor="ulli">
                 <Computer />
                 LLI
               </label>

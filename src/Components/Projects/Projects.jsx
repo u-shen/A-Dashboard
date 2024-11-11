@@ -46,9 +46,9 @@ function Projects() {
   return (
     <div className="projects-container">
       <div className="projects">
-        {randomProjects.map((project) => {
+        {randomProjects.map((project, index) => {
           return (
-            <div className="project">
+            <div key={index} className="project">
               <div className="project-meta-deta">
                 <div className="title">{project.title}</div>
                 <div className="date">
@@ -63,8 +63,8 @@ function Projects() {
               </div>
               <div className="line"></div>
               <ul className="skills">
-                {project.skills.map((skill) => (
-                  <li>{skill}</li>
+                {project.skills.map((skill, index) => (
+                  <li key={index}>{skill}</li>
                 ))}
               </ul>
               <div className="line"></div>

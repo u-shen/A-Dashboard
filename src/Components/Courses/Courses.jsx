@@ -15,9 +15,9 @@ function Courses() {
   return (
     <div className="course-container">
       <div className="course-data">
-        {randomCourse.map((course) => {
+        {randomCourse.map((course, index) => {
           return (
-            <div className="course">
+            <div key={index} className="course">
               <div className="img-course">
                 <img src={course.img} />
               </div>

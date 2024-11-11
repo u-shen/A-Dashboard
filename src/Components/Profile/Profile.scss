@@ -16,21 +16,56 @@
     background-color: #fff;
     border-radius: 8px;
 
+    .line {
+      background-color: rgba(88, 88, 88, .2);
+      height: 5px;
+      border-radius: 8px;
+      width: 50%;
+      display: block;
+      position: relative;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 70%;
+        background-color: #0075ff;
+      }
+    }
+
     .user-profile {
       @extend .profile;
       justify-content: center;
+      flex-grow: 1;
       align-items: center;
       flex-wrap: wrap;
       gap: 10px;
+      padding: 20px;
 
       .image img {
         width: 80px;
+      }
+
+      .level {
+        color: #888;
+      }
+
+      .rating {
+        svg {
+          width: 15px;
+          color: rgba(88, 88, 88, .3);
+        }
+
+        svg:not(:last-child) {
+          color: #f59e0b;
+        }
       }
     }
 
     .user-meta-data {
       @extend .profile;
-      flex-grow: 1;
+      flex-grow: 10;
       flex-wrap: wrap;
 
       .general-info:not(:last-child) {
@@ -121,6 +156,7 @@
       }
     }
 
+
     .latset-active {
       @extend .profile;
       justify-content: center;
@@ -137,6 +173,10 @@
         small {
           color: #888;
         }
+      }
+
+      .active:not(:last-child) {
+        border-bottom: 2px solid rgba(88, 88, 88, .2);
       }
 
       .active {

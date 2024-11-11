@@ -1,4 +1,5 @@
 import "./Profile.scss";
+import { Star } from "@mui/icons-material";
 import LOGO from "../Navbar/avatar.png";
 import ACTIVITY01 from "./assets/activity-01.png";
 import ACTIVITY02 from "./assets/activity-02.png";
@@ -20,10 +21,16 @@ function Profile() {
               <img src={LOGO} alt="" />
             </div>
             <div className="name">USHEN</div>
-            <div className="Level">Level 20</div>
+            <div className="level">Level 20</div>
             <span className="line"></span>
-            <div className="rating"></div>
-            <small>550 Rating</small>
+            <div className="rating">
+              <Star />
+              <Star />
+              <Star />
+              <Star />
+              <Star />
+            </div>
+            <small>500 Rating</small>
           </div>
           <div className="user-meta-data">
             <div className="general-info">
@@ -39,7 +46,10 @@ function Profile() {
                 </div>
                 <div className="gender">
                   <label>Country:</label>
-                  <div className="answer">Egypt</div>
+                  <div className="answer">Morocco</div>
+                </div>
+                <div className="input">
+                  <input checked={true} type="checkbox" />
                 </div>
               </div>
             </div>
@@ -56,7 +66,10 @@ function Profile() {
                 </div>
                 <div className="gender">
                   <label>Country:</label>
-                  <div className="answer">Egypt</div>
+                  <div className="answer">Morocco</div>
+                </div>
+                <div className="input">
+                  <input checked={false} type="checkbox" />
                 </div>
               </div>
             </div>
@@ -73,7 +86,10 @@ function Profile() {
                 </div>
                 <div className="gender">
                   <label>Country:</label>
-                  <div className="answer">Egypt</div>
+                  <div className="answer">Morocco</div>
+                </div>
+                <div className="input">
+                  <input checked={true} type="checkbox" />
                 </div>
               </div>
             </div>
@@ -90,7 +106,10 @@ function Profile() {
                 </div>
                 <div className="gender">
                   <label>Country:</label>
-                  <div className="answer">Egypt</div>
+                  <div className="answer">Morocco</div>
+                </div>
+                <div className="input">
+                  <input checked={false} type="checkbox" />
                 </div>
               </div>
             </div>
@@ -104,15 +123,13 @@ function Profile() {
             <small>Complete Skills List</small>
           </div>
           <ul className="skills-list">
-            {skills.map((skill) => {
+            {skills.map((skill, index) => {
               return (
-                <>
-                  <div className="skill-name">
-                    {skill.map((sk) => {
-                      return <li>{sk}</li>;
-                    })}
-                  </div>
-                </>
+                <div key={index} className="skill-name">
+                  {skill.map((sk, index) => {
+                    return <li key={index}>{sk}</li>;
+                  })}
+                </div>
               );
             })}
           </ul>
