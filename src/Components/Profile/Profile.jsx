@@ -49,7 +49,7 @@ function Profile() {
                   <div className="answer">Morocco</div>
                 </div>
                 <div className="input">
-                  <input checked={true} type="checkbox" />
+                  <input defaultChecked={true} type="checkbox" />
                 </div>
               </div>
             </div>
@@ -69,7 +69,7 @@ function Profile() {
                   <div className="answer">Morocco</div>
                 </div>
                 <div className="input">
-                  <input checked={false} type="checkbox" />
+                  <input defaultChecked={false} type="checkbox" />
                 </div>
               </div>
             </div>
@@ -89,7 +89,7 @@ function Profile() {
                   <div className="answer">Morocco</div>
                 </div>
                 <div className="input">
-                  <input checked={true} type="checkbox" />
+                  <input defaultChecked={true} type="checkbox" />
                 </div>
               </div>
             </div>
@@ -109,7 +109,7 @@ function Profile() {
                   <div className="answer">Morocco</div>
                 </div>
                 <div className="input">
-                  <input checked={false} type="checkbox" />
+                  <input defaultChecked={false} type="checkbox" />
                 </div>
               </div>
             </div>

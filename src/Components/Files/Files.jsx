@@ -70,12 +70,6 @@ function Files() {
       size: 7.2,
     },
   ];
-  const Statistics = () => {
-    const png = 0;
-    const pdf = 0;
-    const sql = 0;
-    const csv = 0;
-  };
   useEffect(() => {
     const randomFileData = [];
     for (let i = 0; i <= 3; i++) {

@@ -98,6 +98,22 @@ function Aside() {
               </div>
             </ul>
           </nav>
+          <div className="Copyrights">
+            <div>
+              <p>
+                Made By<span> Ushen</span>
+              </p>
+              <p>
+                Designed By<span> Elzero</span>
+              </p>
+            </div>
+            <div>
+              <p>All rights reserved ®</p>
+              <p>
+                Copyrights at<span> {new Date().getFullYear()}</span> ©
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </>

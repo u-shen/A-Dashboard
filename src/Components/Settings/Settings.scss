@@ -104,6 +104,7 @@
 
     .item {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       padding: 10px 0;
@@ -126,6 +127,34 @@
         padding: 5px 10px;
         border-radius: 8px;
         background-color: rgba(88, 88, 88, .2);
+      }
+
+      #password {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+
+        button {
+          padding: 8px 20px;
+          background-color: rgba(#0075ff, .5);
+          color: #fff;
+          border-radius: 8px;
+          cursor: pointer;
+        }
+      }
+
+      #password input {
+        border-radius: 8px;
+        flex: 1;
+        padding: 10px;
+        outline: none;
+        border: 1px solid #888;
+
+        &:focus {
+          outline: none;
+        }
       }
     }
   }
@@ -239,5 +268,9 @@
   @media (max-width:767px) {
     display: flex;
     flex-direction: column;
+  }
+
+  small.error {
+    color: red;
   }
 }
