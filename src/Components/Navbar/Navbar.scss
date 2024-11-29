@@ -9,10 +9,25 @@ header {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    position: relative;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      border-radius: 50%;
+
+    }
   }
 
   .avatar {
     width: 30px;
+    cursor: pointer;
 
     img {
       width: 100%;

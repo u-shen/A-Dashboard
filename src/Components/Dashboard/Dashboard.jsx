@@ -21,6 +21,15 @@ import {
   UploadFile,
   Pending,
   CalendarMonthRounded,
+  ListAltOutlined,
+  AddTask,
+  ErrorOutline,
+  Downloading,
+  FormatQuoteTwoTone,
+  Favorite,
+  ModeComment,
+  ArrowCircleLeft,
+  ArrowCircleRight,
 } from "@mui/icons-material";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import PersonIcon from "@mui/icons-material/Person";
@@ -193,7 +202,12 @@ function Dashboard() {
                   <p>Projects</p>
                 </div>
               </div>
-              <button className="profile">Profile</button>
+              <button
+                onClick={() => (window.location.pathname = "/profile")}
+                className="profile"
+              >
+                Profile
+              </button>
             </div>
           </div>
           <div className="grid-item-target">
@@ -271,25 +285,25 @@ function Dashboard() {
               </div>
               <div className="Statistics-items">
                 <div className="row">
-                  <div className="icon-row-container">
-                    <Code />
+                  <div className="list-total icon-row-container">
+                    <ListAltOutlined />
                     <p>2500</p>
                     <small>Total</small>
                   </div>
-                  <div className="icon-row-container">
-                    <Code />
+                  <div className="list-pending icon-row-container">
+                    <Downloading />
                     <p>500</p>
                     <small>Pending</small>
                   </div>
                 </div>
                 <div className="row">
-                  <div className="icon-row-container">
-                    <Code />
+                  <div className="list-closed icon-row-container">
+                    <AddTask />
                     <p>1900</p>
                     <small>Closed</small>
                   </div>
-                  <div className="icon-row-container">
-                    <Code />
+                  <div className="list-deleted icon-row-container">
+                    <ErrorOutline />
                     <p>100</p>
                     <small>Deleted</small>
                   </div>
@@ -358,24 +372,51 @@ function Dashboard() {
                 </h4>
               </div>
               <div className="tasks-items">
-                {tasks.map((task) => {
-                  return (
-                    <div
-                      className="task"
-                      style={{
-                        textDecoration: task.compelted ? "line-through" : null,
-                      }}
-                    >
-                      <div className="text">
-                        <div className="task-title">{task.title}</div>
-                        <small className="task-desc">{task.desc}</small>
+                {tasks.length === 0 ? (
+                  <h4>Tasks Empty</h4>
+                ) : (
+                  tasks.map((task) => {
+                    return (
+                      <div
+                        className="task"
+                        style={{
+                          cursor: "pointer",
+                          textDecoration: task.compelted
+                            ? "line-through"
+                            : null,
+                        }}
+                      >
+                        <div
+                          onClick={() => {
+                            const newTasks = tasks.filter(
+                              (taskFil) => taskFil.title != task.title,
+                            );
+                            setTasks([
+                              ...newTasks,
+                              { ...task, compelted: !task.compelted },
+                            ]);
+                          }}
+                          className="text"
+                        >
+                          <div className="task-title">{task.title}</div>
+                          <small className="task-desc">{task.desc}</small>
+                        </div>
+                        <button
+                          onClick={() => {
+                            setTasks(
+                              tasks.filter((taskFiltred) => {
+                                return taskFiltred.title !== task.title;
+                              }),
+                            );
+                          }}
+                          className="delete"
+                        >
+                          <Delete />
+                        </button>
                       </div>
-                      <button className="delete">
-                        <Delete />
-                      </button>
-                    </div>
-                  );
-                })}
+                    );
+                  })
+                )}
               </div>
             </div>
           </div>
@@ -509,7 +550,40 @@ function Dashboard() {
                   Latest Posts
                 </h4>
               </div>
-              <div className="reminder-items"></div>
+              <div className="post-items">
+                <div className="img">
+                  <img src="https://avatar.iran.liara.run/public/boy" alt="" />
+                  <div className="info">
+                    <h4>Farah Ushen</h4>
+                    <small>About 3 Hours Ago</small>
+                  </div>
+                </div>
+                <div className="quote">
+                  <span className="line"></span>
+                  <FormatQuoteTwoTone />
+                  <p>
+                    You can fool all of the people some of the time, and some of
+                    the people all of the time, but you can't fool all of the
+                    people all of the time.
+                  </p>
+                  <FormatQuoteTwoTone />
+                  <span className="line"></span>
+                </div>
+                <div className="react-social">
+                  <div className="heart">
+                    <Favorite />
+                    1.8k
+                  </div>
+                  <div className="arrow">
+                    <ArrowCircleLeft />
+                    <ArrowCircleRight />
+                  </div>
+                  <div className="comment">
+                    <ModeComment />
+                    500
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="grid-item-target">

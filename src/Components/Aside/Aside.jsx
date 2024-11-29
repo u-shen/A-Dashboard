@@ -77,19 +77,28 @@ function Aside() {
                 );
               })}
               <div className="social">
-                <a className="facebook" href="https://www.facebook.com/u-shen">
+                <a
+                  target="_blank"
+                  className="facebook"
+                  href="https://www.facebook.com/u-shen"
+                >
                   <i>
                     <Facebook />
                   </i>
                 </a>
-                <a className="github" href="https://github.com/u-shen">
+                <a
+                  className="github"
+                  target="_blank"
+                  href="https://github.com/u-shen"
+                >
                   <i>
                     <GitHub />
                   </i>
                 </a>
                 <a
                   className="linkedin"
-                  href="https://www.linkedin.com/in/u-shen/"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/abderrazzak-farah-835aa130b/"
                 >
                   <i>
                     <LinkedIn />

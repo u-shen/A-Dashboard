@@ -54,7 +54,16 @@ function Settings() {
               </small>
             </div>
             <div className="web-control-radio">
-              <input defaultChecked={true} type="checkbox" />
+              <div>
+                <label class="switch">
+                  <input
+                    defaultChecked={true}
+                    className="toggle-checkbox"
+                    type="checkbox"
+                  />
+                  <div className="toggle-switch"></div>
+                </label>
+              </div>
             </div>
           </div>
           <div className="textarea-control">
@@ -170,7 +179,12 @@ function Settings() {
                 <small className="desc">Enable/Disable The Feature</small>
               </div>
               <div className="change-btn">
-                <input type="radio" defaultChecked={true} />
+                <div>
+                  <label class="switch">
+                    <input className="toggle-checkbox" type="checkbox" />
+                    <div className="toggle-switch"></div>
+                  </label>
+                </div>
               </div>
             </div>
             <div className="Device item">
@@ -281,7 +295,12 @@ function Settings() {
                 <label htmlFor="daily">Daily</label>
               </div>
               <div className="weekly">
-                <input type="radio" name="backup" id="weekly" />
+                <input
+                  type="radio"
+                  defaultChecked={true}
+                  name="backup"
+                  id="weekly"
+                />
                 <label htmlFor="weekly">Weekly</label>
               </div>
               <div className="daily">
@@ -298,7 +317,12 @@ function Settings() {
                 </label>
               </div>
               <div className="location-failed">
-                <input name="location" id="ulli" type="radio" />
+                <input
+                  defaultChecked={true}
+                  name="location"
+                  id="ulli"
+                  type="radio"
+                />
                 <label htmlFor="ulli">
                   <Computer />
                   LLI
@@ -306,12 +330,7 @@ function Settings() {
               </div>
 
               <div className="location-failed">
-                <input
-                  defaultChecked={true}
-                  name="location"
-                  id="sigma"
-                  type="radio"
-                />
+                <input name="location" id="sigma" type="radio" />
                 <label htmlFor="sigma">
                   <Computer />
                   SIGMA
@@ -321,7 +340,7 @@ function Settings() {
           </div>
         </div>
       </div>
-      <input type="submit" />
+      <input type="submit" value="Save" />
     </form>
   );
 }

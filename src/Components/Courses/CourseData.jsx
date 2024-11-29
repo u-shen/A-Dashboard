@@ -21,14 +21,14 @@ export const courseData = [
   {
     img: Course3,
     title: "Responsive Web Design",
-    desc: "Mastering Responsive Web Design And Media Queries And Know Everything About Breakpoints",
+    desc: "Start with low-fidelity sketches before moving to digital prototypes Mastering Responsive Web Design And Media Queries And Know Everything About Breakpoints",
     user: 650,
     price: 90,
   },
   {
     img: Course4,
     title: "Mastering Python",
-    desc: "Mastering Python To Prepare For Data Science And AI And Automating Things in Your Life",
+    desc: "Build interactive prototypes using HTML/CSS to showcase functionality Learning Data Science AI And Automating Things in Your Life",
     user: 950,
     price: 250,
   },

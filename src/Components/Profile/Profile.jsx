@@ -49,7 +49,16 @@ function Profile() {
                   <div className="answer">Morocco</div>
                 </div>
                 <div className="input">
-                  <input defaultChecked={true} type="checkbox" />
+                  <div>
+                    <label class="switch">
+                      <input
+                        defaultChecked={true}
+                        className="toggle-checkbox"
+                        type="checkbox"
+                      />
+                      <div className="toggle-switch"></div>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -69,7 +78,12 @@ function Profile() {
                   <div className="answer">Morocco</div>
                 </div>
                 <div className="input">
-                  <input defaultChecked={false} type="checkbox" />
+                  <div>
+                    <label class="switch">
+                      <input className="toggle-checkbox" type="checkbox" />
+                      <div className="toggle-switch"></div>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -89,7 +103,16 @@ function Profile() {
                   <div className="answer">Morocco</div>
                 </div>
                 <div className="input">
-                  <input defaultChecked={true} type="checkbox" />
+                  <div>
+                    <label class="switch">
+                      <input
+                        defaultChecked={true}
+                        className="toggle-checkbox"
+                        type="checkbox"
+                      />
+                      <div className="toggle-switch"></div>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -109,7 +132,12 @@ function Profile() {
                   <div className="answer">Morocco</div>
                 </div>
                 <div className="input">
-                  <input defaultChecked={false} type="checkbox" />
+                  <div>
+                    <label class="switch">
+                      <input className="toggle-checkbox" type="checkbox" />
+                      <div className="toggle-switch"></div>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
