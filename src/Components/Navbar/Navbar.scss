@@ -11,7 +11,71 @@ header {
     gap: 10px;
     position: relative;
     cursor: pointer;
+    position:relative;
+    #notif-list {
+      position: absolute;
+      top: 40px;
+      right: 54px;
+      width: 340px;
+      height: 460px;
+      z-index: 99;
+      overflow-y: auto;
+      border-radius: 10px;
+      background-color: #eee;
+      box-shadow: 0 0 10px #ccc;
 
+      li {
+          &:hover {
+            background-color:rgba(#888,0.3);
+            &:not(:last-child) {
+            border-bottom:2px solid #0891ff;
+          }
+          small,span {
+            color:#000;
+          }
+          }
+          a {
+          display:flex;
+          gap:10px;
+          color:#000;
+          text-decoration:none;
+          &>div {
+            display:flex;
+            flex-direction:column;
+          }
+          small {
+            flex-basis:100%;
+            color:#888;
+            font-weight:bold;
+          }
+        }
+          width: 100%;
+          padding-block: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: .25s ease-in-out;
+          &:not(:last-child) {
+          border-bottom:2px solid rgba(#888,0.5);
+        }
+        img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        box-shadow: 0 0 5px #ddd;
+        margin-inline-start: 5px;
+        }
+      }
+      h4 {
+        width: 100%;
+        position: relative;
+        padding-block: 10px 5px;
+        text-align: center;
+        background-color: #ccc;
+        border-bottom: 1px solid #888;
+      }
+    }
     &:before {
       content: "";
       position: absolute;
