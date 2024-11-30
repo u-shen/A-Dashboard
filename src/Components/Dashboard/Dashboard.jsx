@@ -620,7 +620,7 @@ function Dashboard() {
                   <div className="icon">
                     <Mail />
                   </div>
-                  <div className="like">8K Mail</div>
+                  <div className="like">8K</div>
                   <div className="view">View</div>
                 </div>
                 <div className="social-item linkdein">
