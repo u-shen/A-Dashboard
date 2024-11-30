@@ -22,7 +22,7 @@ function Navbar() {
           <NotificationsNone />
         </i>
         <div onClick={() => navigate("/profile")} className="avatar">
-          <img src={avatar} alt="Avatar" />
+          <img src="https://avatar.iran.liara.run/public/boy" alt="Avatar" />
         </div>
       </div>
     </header>

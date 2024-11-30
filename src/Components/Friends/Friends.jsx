@@ -19,9 +19,6 @@ function Friends() {
   if (isError) return <h1>ERROR ...</h1>;
   return (
     <section className="friends">
-      <div className="friends-title">
-        <h2>Friends</h2>
-      </div>
       <div className="firends-box-container">
         {data?.map((user, key) => {
           return (

@@ -80,7 +80,7 @@ function Aside() {
                 <a
                   target="_blank"
                   className="facebook"
-                  href="https://www.facebook.com/u-shen"
+                  href="https://www.facebook.com/profile.php?id=61565136509527"
                 >
                   <i>
                     <Facebook />

@@ -7,21 +7,22 @@ export const courseData = [
   {
     img: Course1,
     title: "Mastering Web Design",
-    desc: "Master The Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture",
+    desc: "Master The functionality sketches Algorithms  Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture",
     user: 995,
     price: 165,
   },
   {
     img: Course2,
     title: "Data Structure And Algorithms",
-    desc: "Master The Art Of Data Strcuture And Famous Algorithms Like Sorting, Dividing And Conquering",
+    desc: "Master The Art Proactive didactic contingency Of Data Strcuture And Famous Algorithms Like Sorting, Dividing And Conquering",
+
     user: 1150,
     price: 210,
   },
   {
     img: Course3,
     title: "Responsive Web Design",
-    desc: "Start with low-fidelity sketches before moving to digital prototypes Mastering Responsive Web Design And Media Queries And Know Everything About Breakpoints",
+    desc: "Start with low-fidelity sketches before Mastering Responsive Web Design And Media Queries And Know Everything About Breakpoints",
     user: 650,
     price: 90,
   },
@@ -35,7 +36,7 @@ export const courseData = [
   {
     img: Course5,
     title: "PHP Examples",
-    desc: "PHP Tutorials And Examples And Practice On Web Application And Connecting With Databases",
+    desc: "PHP Tutorials And Examples And Practice  On Web Application On Web Application And Connecting With Databases",
     user: 888,
     price: 190,
   },

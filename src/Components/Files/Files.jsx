@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { DownloadRounded, Upload, ImageTwoTone } from "@mui/icons-material";
+import {
+  DownloadRounded,
+  Upload,
+  ImageTwoTone,
+  PictureAsPdf,
+  DocumentScanner,
+  SwitchAccount,
+} from "@mui/icons-material";
 import avi from "./assets/avi.svg";
 import eps from "./assets/eps.svg";
 import pdf from "./assets/pdf.svg";
@@ -116,45 +123,45 @@ function Files() {
         <div className="statistic">
           <h4 className="statistic-title">Files Statistics</h4>
 
-          <div className="img-container">
-            <div className="files-statistic-icon">
-              <ImageTwoTone />
-            </div>
-            <div className="files-statistic-meta-data">
-              <p className="title">Images</p>
-              <small>130 Files</small>
-            </div>
-            <div className="size">6.5GB</div>
-          </div>
           <div className="img-container pdf-container">
             <div className="files-statistic-icon">
-              <ImageTwoTone />
+              <PictureAsPdf />
             </div>
             <div className="files-statistic-meta-data">
-              <p className="title">Images</p>
-              <small>130 Files</small>
+              <p className="title">PDF Files</p>
+              <small>564 Files</small>
             </div>
             <div className="size">6.5GB</div>
           </div>
-          <div className="img-container sql-container">
+          <div className="img-container imgs-container">
             <div className="files-statistic-icon">
               <ImageTwoTone />
             </div>
             <div className="files-statistic-meta-data">
-              <p className="title">Images</p>
-              <small>130 Files</small>
+              <p className="title">IMGS Files</p>
+              <small>83 Files</small>
             </div>
-            <div className="size">6.5GB</div>
+            <div className="size">3.8GB</div>
+          </div>
+          <div className="img-container word-container">
+            <div className="files-statistic-icon">
+              <DocumentScanner />
+            </div>
+            <div className="files-statistic-meta-data">
+              <p className="title">WORD Files</p>
+              <small>107 Files</small>
+            </div>
+            <div className="size">1.4GB</div>
           </div>
           <div className="img-container csv-container">
             <div className="files-statistic-icon">
-              <ImageTwoTone />
+              <SwitchAccount />
             </div>
             <div className="files-statistic-meta-data">
-              <p className="title">Images</p>
-              <small>130 Files</small>
+              <p className="title">CSV FILES</p>
+              <small>128 Files</small>
             </div>
-            <div className="size">6.5GB</div>
+            <div className="size">2.9GB</div>
           </div>
           <button className="uplode-btn">
             <label>

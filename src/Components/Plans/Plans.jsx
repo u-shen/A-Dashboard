@@ -1,12 +1,17 @@
+import { useEffect, useState } from "react";
 import { aviablePlans } from "./PlansData";
 import { DownloadDone, Close } from "@mui/icons-material";
 import "./Plans.scss";
 
 function Plans() {
+  const [plans, setPlans] = useState([]);
+  useEffect(() => {
+    setPlans(aviablePlans);
+  }, []);
   return (
     <>
       <div className="Plans-Container">
-        {aviablePlans.map((plan, index) => {
+        {plans.map((plan, index) => {
           return (
             <div key={index} className="plan">
               <div className={`${plan.color} plan-meta-data`}>
@@ -37,7 +42,20 @@ function Plans() {
 
                 {!plan.current ? (
                   <div className="btn">
-                    <button className={`${plan.color}-btn plan-btn`}>
+                    <button
+                      onClick={() => {
+                        const newPlans = [...plans];
+                        const newPlansFiltred = newPlans.filter(
+                          (pl) => pl.name != plan.name,
+                        );
+                        newPlans.forEach((pl) => (pl.current = false));
+                        setPlans([
+                          ...newPlansFiltred,
+                          { ...plan, current: true },
+                        ]);
+                      }}
+                      className={`${plan.color}-btn plan-btn`}
+                    >
                       Join
                     </button>
                   </div>

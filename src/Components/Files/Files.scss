@@ -98,6 +98,7 @@
       border: 1px solid #888;
       border-radius: 8px;
 
+
       .files-statistic-meta-data small {
         color: #888;
         font-weight: bold;
@@ -107,7 +108,79 @@
         margin-left: auto;
         color: #888;
         font-weight: bold;
+        font-size: 12px;
 
+      }
+    }
+
+    .pdf-container {
+      transition: 0.3s;
+
+      &:hover {
+        background-color: rgba(244, 67, 54, .2);
+        border: 1px solid #f44336;
+      }
+
+      .files-statistic-icon {
+        background-color: rgba(244, 67, 54, .2);
+      }
+
+      svg {
+        color: #f44336
+      }
+    }
+
+    .imgs-container {
+      transition: 0.3s;
+
+      &:hover {
+        background-color: rgba(34, 197, 94, .2);
+        border: 1px solid #22c55e;
+      }
+
+      .files-statistic-icon {
+        background-color: rgba(34, 197, 94, .2);
+        border: 1px solid #22c55e;
+      }
+
+      svg {
+        color: #22c55e
+      }
+    }
+
+    .word-container {
+      transition: 0.3s;
+
+      &:hover {
+        background-color: rgba(0, 117, 255, .2);
+        border: 1px solid #0075ff;
+      }
+
+      .files-statistic-icon {
+        background-color: rgba(0, 117, 255, .2);
+        border: 1px solid #0075ff;
+      }
+
+      svg {
+        color: #0075ff
+      }
+    }
+
+    .csv-container {
+      transition: 0.3s;
+
+      &:hover {
+        background-color: rgba(245, 158, 11, .2);
+        border: 1px solid #f59e0b;
+      }
+
+      .files-statistic-icon {
+        background-color: rgba(245, 158, 11, .2);
+        border: 1px solid #f59e0b;
+      }
+
+      svg {
+        color: #f59e0b
       }
     }
 

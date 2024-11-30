@@ -1,9 +1,9 @@
-import "./Profile.scss";
 import { Star } from "@mui/icons-material";
 import LOGO from "../Navbar/avatar.png";
 import ACTIVITY01 from "./assets/activity-01.png";
 import ACTIVITY02 from "./assets/activity-02.png";
 import ACTIVITY03 from "./assets/activity-03.png";
+import "./Profile.scss";
 function Profile() {
   const skills = [
     ["Javascript", "TypeScript", "C++"],
@@ -18,7 +18,7 @@ function Profile() {
         <div className="user">
           <div className="user-profile">
             <div className="image">
-              <img src={LOGO} alt="" />
+              <img src="https://avatar.iran.liara.run/public/boy" alt="" />
             </div>
             <div className="name">USHEN</div>
             <div className="level">Level 20</div>
@@ -38,7 +38,7 @@ function Profile() {
               <div className="data">
                 <div className="name">
                   <label>Full Name:</label>
-                  <div className="answer">Mohamed Samy</div>
+                  <div className="answer">Farah Ushen</div>
                 </div>
                 <div className="gender">
                   <label>Geneder:</label>
@@ -66,16 +66,16 @@ function Profile() {
               <div className="title">General Information</div>
               <div className="data">
                 <div className="name">
-                  <label>Full Name:</label>
-                  <div className="answer">Mohamed Samy</div>
+                  <label>Email:</label>
+                  <div className="answer">farah.ush@gmail.com</div>
                 </div>
                 <div className="gender">
-                  <label>Geneder:</label>
-                  <div className="answer">Male</div>
+                  <label>Phone:</label>
+                  <div className="answer">06619770716</div>
                 </div>
                 <div className="gender">
-                  <label>Country:</label>
-                  <div className="answer">Morocco</div>
+                  <label>Date Of Birth:</label>
+                  <div className="answer">01/01/2002</div>
                 </div>
                 <div className="input">
                   <div>
@@ -91,16 +91,16 @@ function Profile() {
               <div className="title">General Information</div>
               <div className="data">
                 <div className="name">
-                  <label>Full Name:</label>
-                  <div className="answer">Mohamed Samy</div>
+                  <label>Job Title: </label>
+                  <div className="answer">Web Developer </div>
                 </div>
                 <div className="gender">
-                  <label>Geneder:</label>
-                  <div className="answer">Male</div>
+                  <label>Language: </label>
+                  <div className="answer">React</div>
                 </div>
                 <div className="gender">
-                  <label>Country:</label>
-                  <div className="answer">Morocco</div>
+                  <label>Years Of Experience: </label>
+                  <div className="answer">+2</div>
                 </div>
                 <div className="input">
                   <div>
@@ -120,16 +120,16 @@ function Profile() {
               <div className="title">General Information</div>
               <div className="data">
                 <div className="name">
-                  <label>Full Name:</label>
-                  <div className="answer">Mohamed Samy</div>
+                  <label>Payment Method: </label>
+                  <div className="answer">Paypal</div>
                 </div>
                 <div className="gender">
-                  <label>Geneder:</label>
-                  <div className="answer">Male</div>
+                  <label>Plan: </label>
+                  <div className="answer">2 Months</div>
                 </div>
                 <div className="gender">
-                  <label>Country:</label>
-                  <div className="answer">Morocco</div>
+                  <label>Subscription: </label>
+                  <div className="answer">Monthly</div>
                 </div>
                 <div className="input">
                   <div>
