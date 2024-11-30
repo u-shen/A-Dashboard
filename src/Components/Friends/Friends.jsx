@@ -1,4 +1,3 @@
-import React from "react";
 import { useFetchData } from "../../CustomHooks/useFetchData";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
@@ -11,12 +10,20 @@ import Friend3 from "./pix/friend-03.jpg";
 import Friend4 from "./pix/friend-04.jpg";
 import Friend5 from "./pix/friend-05.jpg";
 import "./Friends.scss";
+import { useState } from "react";
 
 function Friends() {
   const pix = [Friend1, Friend2, Friend3, Friend4, Friend5];
   const { data, isLoading, isPending, isError } = useFetchData();
   if (isLoading | isPending) return <h1>LOADING ...</h1>;
   if (isError) return <h1>ERROR ...</h1>;
+  // const [modifiedData, setModifiedData] = useState();
+  // useEffect(() => {
+  //   if (data) {
+  //     const dataCopy = [...data];
+  //     setModifiedData(dataCopy);
+  //   }
+  // }, [data]);
   return (
     <section className="friends">
       <div className="firends-box-container">
@@ -67,7 +74,14 @@ function Friends() {
                 </div>
                 <div className="button">
                   <button className="profile">Profile</button>
-                  <button className="remove">Remove</button>
+                  <button
+                    onClick={() => {
+                      data.filter((dt) => dt.id != user.id);
+                    }}
+                    className="remove"
+                  >
+                    Remove
+                  </button>
                 </div>
               </div>
             </div>

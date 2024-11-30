@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 import "./Settings.scss";
 import {
   Twitter,
@@ -20,12 +20,12 @@ function Settings() {
     e.preventDefault();
     setIsEmailEnabled((prev) => !prev);
   };
-  const formSchema = z.object({
-    message: z.string().min(50),
-    name: z.string,
-    lastName: z.string(),
-    password: z.string().min(8).max(20),
-    email: z.string().email("Email Not Valid"),
+  const formSchema = yup.object({
+    message: yup.string().required("Message Is Required Field").min(50),
+    name: yup.string().required("First Name Is Required Field"),
+    lastName: yup.string().required("Last Name Name Is Required Field"),
+    password: yup.string().required("Passwords Is Required Field"),
+    email: yup.string().email("Email Not Valid"),
   });
   const {
     register,
@@ -33,7 +33,7 @@ function Settings() {
     formState: { errors },
   } = useForm({
     mode: "onChange",
-    resolver: zodResolver(formSchema),
+    resolver: yupResolver(formSchema),
   });
   const submitedForm = (data) => {
     console.log(data);
@@ -132,8 +132,8 @@ function Settings() {
                 />
                 <button onClick={toggleEmail}>Change</button>
               </div>
-              {errors.lastName && (
-                <small className="error"> {errors.lastName.message}</small>
+              {errors.email && (
+                <small className="error"> {errors.email.message}</small>
               )}
             </div>
           </div>
