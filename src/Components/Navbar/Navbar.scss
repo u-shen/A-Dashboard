@@ -23,6 +23,11 @@ header {
       border-radius: 10px;
       background-color: #eee;
       box-shadow: 0 0 10px #ccc;
+      @media (max-width:767px) {
+        font-size:12px;
+        width: 240px;
+        height: 260px;
+      }
 
       li {
           &:hover {

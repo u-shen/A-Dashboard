@@ -599,21 +599,21 @@ function Dashboard() {
                   <div className="icon">
                     <Facebook />
                   </div>
-                  <div className="like">2M Likes</div>
+                  <div className="like">2M</div>
                   <div className="view">View</div>
                 </div>
                 <div className="social-item github">
                   <div className="icon">
                     <GitHub />
                   </div>
-                  <div className="like">200 Stars</div>
+                  <div className="like">200 </div>
                   <div className="view">View</div>
                 </div>
                 <div className="social-item twitter">
                   <div className="icon">
                     <Twitter />
                   </div>
-                  <div className="like">500K Followers</div>
+                  <div className="like">5K </div>
                   <div className="view">View</div>
                 </div>
                 <div className="social-item mail">
@@ -627,7 +627,7 @@ function Dashboard() {
                   <div className="icon">
                     <LinkedIn />
                   </div>
-                  <div className="like">3K Connections</div>
+                  <div className="like">3K</div>
                   <div className="view">View</div>
                 </div>
               </div>
